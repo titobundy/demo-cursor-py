@@ -15,6 +15,24 @@ Proyecto simple de API construida con FastAPI.
    ```
    uv pip install -e .
    ```
+## Recrear el entorno virtual
+
+```
+# Remove the existing virtual environment
+rm -rf venv
+
+# Create a new virtual environment in the correct location
+python3 -m venv venv
+
+# Activate the new virtual environment
+source venv/bin/activate
+
+# Reinstall your dependencies
+pip install -r requirements.txt  # If you have a requirements.txt file
+
+# or install the packages you need, including uvicorn and fastapi
+pip install uvicorn fastapi pydantic-settings
+```
 
 ## Ejecutar la aplicación
 
